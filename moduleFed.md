@@ -1,2 +1,2 @@
 - module federation is features that is build into webpack 5
-- 
+- In MF, we can not only send components, we can also send js
