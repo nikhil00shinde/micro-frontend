@@ -1,0 +1,2 @@
+- module federation is features that is build into webpack 5
+- 
