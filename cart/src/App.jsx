@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import "./index.scss";
-import Footer from "./Footer";
-import Header from "./Header";
-import HomeContent from "./HomeContent";
+import Header from "home/Header";
+import Footer from "home/Footer";
+import CardContend from "./CardContend";
 import "remixicon/fonts/remixicon.css";
 
 
-
 const App = () => (
-  <div className=" text-3xl mx-auto max-w-6xl">
+  <div className="mx-auto max-w-6xl">
     <Header/>
     <div className="my-10">
-       <HomeContent/>
+       <CardContend/>
     </div>
     <Footer/>
   </div>
