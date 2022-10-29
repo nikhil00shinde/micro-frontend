@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { currency, getProductById,getProducts } from './product';
 import {addToCart, useLoggedIn} from "cart/cart";
 
+import {Link} from "react-router-dom";
 function HomeContent() {
   const loggedIn = useLoggedIn();
   const [products,setProducts] = useState([]);
@@ -18,10 +19,14 @@ function HomeContent() {
             { 
                 products.map((product) => (
                     <div key={product.id}>
+                      <Link to={`product/${product.id}`}>
                        <img src={product.image} alt={product.name}></img>
+                       </Link>
                        <div className='flex'>
                            <div className='flex-grow font-bold'>
+                            <Link to={`product/${product.id}`}>
                                   <a>{product.name}</a>
+                            </Link>
                            </div>
                            <div className='flex-end'>{currency.format(product.price)}</div>
                        </div>

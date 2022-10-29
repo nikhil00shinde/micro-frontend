@@ -28,7 +28,7 @@ function CardContend() {
                   <div></div>
                   <div></div>
                   <div></div>
-                   <div className='text-right'>
+                   <div id="grand_total" className='text-right'>
                       {currency.format(
                         items.reduce((a,v) => a + v.quantity * v.price, 0)
                       )}
